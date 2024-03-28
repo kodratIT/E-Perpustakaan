@@ -14,6 +14,8 @@ class RolePolicy
     public function viewAny(User $user): bool
     {
          return $user->hasRole('Admin');
+        // return $user->hasPermission('Admin');
+
     }
 
     /**
@@ -63,4 +65,5 @@ class RolePolicy
     {
          return $user->hasRole('Admin');
     }
+
 }

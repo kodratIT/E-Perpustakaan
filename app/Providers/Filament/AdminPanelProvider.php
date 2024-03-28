@@ -26,6 +26,7 @@ class AdminPanelProvider extends PanelProvider
             ->default()
             ->id('admin')
             ->path('admin')
+            // ->topNavigation()
             ->login()
             ->colors([
                 'danger' => Color::Rose,
@@ -36,6 +37,7 @@ class AdminPanelProvider extends PanelProvider
                 'warning' => Color::Orange,
             ])
             ->navigationGroups([
+                'Management Books',
                 'Users Management',
             ])
             ->sidebarCollapsibleOnDesktop()
